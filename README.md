@@ -4,7 +4,7 @@
 
 本網站根據 2026-10-27 的公開網站內容及品牌資料重建，原有 repository 的 `main` 只有 README。新版已於 2026-10-27 香港時間 22:41 前發布至 https://www.staropticalhk.com/ ，Vercel 專案為 `star-optical/website-2`。
 
-本次使用已登入的 Vercel CLI，先建立待發布 production deployment，驗證後再 promote。發布版本為 `6dff6634c347026d5702e74fb440387314f82f3a`，部署 ID 為 `dpl_CyHJnA4KcoTuD3ocWCgKSEQrwG2j`。五頁、metadata、robots、sitemap、圖片、聯絡連結及 HTTP 行為的 138 項正式網址檢查全部通過；這不代表已取得搜尋排名或 AI 引用。
+本次使用已登入的 Vercel CLI，先建立待發布 production deployment，驗證後再 promote。現行發布版本為 `1a329fe1fd69adec9f0207e6861f4976b516825e`，部署 ID 為 `dpl_3fALzk3gHVdyi4bjRoguted4JLqD`。香港時間 22:50，五頁、metadata、robots、sitemap、圖片、聯絡連結及 HTTP 行為的 138 項正式網址檢查全部通過，另確認 11 個舊圖片 URL 與原檔 SHA-256 一致；這不代表已取得搜尋排名或 AI 引用。
 
 ## 本地使用
 
