@@ -70,6 +70,8 @@ ${notFound ? '' : `<script type="application/ld+json">${json(structured(page))}<
   await cp(path.join(root,'src/style.css'),path.join(outputRoot,'style.css'));
   // Preserve known original brand asset URLs used in existing references.
   for (const filename of ['star-optical-logo.jpg','star-optical-shop.jpg','favicon.svg']) await cp(path.join(root,'src/assets',filename),path.join(outputRoot,filename));
+  // Keep original public image links working without adding them to new pages.
+  await cp(path.join(root,'src/legacy-assets'),outputRoot,{recursive:true});
   for (const page of documents) {
     const folder=path.join(outputRoot,page.slug);
     await mkdir(folder,{recursive:true});

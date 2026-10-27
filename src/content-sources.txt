@@ -41,3 +41,21 @@ contact
 
 發布前仍應由商家核對
 最新服務／品牌供應、聯絡資料、營業時間、眼睛檢查與驗配流程、費用及後續安排。若新增臨床或產品效益細節，另查相應最新可靠來源及安排專業核對。
+
+舊公開圖片網址相容保留（2026-10-27）
+來源部署：https://website-2-qi4bbodig-star-optical.vercel.app
+該部署提供2026-10-27改版前公開首頁所用的原有圖片。透過已登入Vercel帳戶，以star-optical範圍對指定舊部署作唯讀下載；沒有改變部署保護或讀取環境變數檔。
+原始二進位檔未改動，保存於src/legacy-assets/，建置時複製至網站根目錄，使原本獨立圖片URL繼續可用。沒有把這些圖片加入新頁面，也不表示重新核實圖片內的產品、療效、資格或宣傳文字。
+保留的根目錄路徑：
+/bragi-custom-eyewear.jpg
+/contact-lens-fitting-cover.jpg
+/designer-eyewear-cover.jpg
+/essilor-stellest-2-0.jpg
+/misight-poster.jpeg
+/ok-lens-poster.png
+/panda-star-brand.jpg
+/progressive-lenses-cover.jpg
+/vision-program-school.jpg
+/vision-program-screening.jpg
+/vision-program-team.jpg
+驗證：建置後以本地HTTP請求檢查以上11個URL回應200及圖片Content-Type，並以SHA-256核對回傳內容與保存來源檔一致。Logo、門市照片及favicon原有URL的保留由既有建置流程處理。

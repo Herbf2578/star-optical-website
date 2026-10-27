@@ -3,12 +3,28 @@ import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import path from 'node:path';
 import {once} from 'node:events';
+import {createHash} from 'node:crypto';
 import {build} from '../scripts/build.mjs';
 import {createServer} from '../scripts/serve.mjs';
 const production=await build({production:true,output:'.build/test-production'});
 const preview=await build({production:false,output:'.build/test-preview'});
 const htmlAt=(build,route)=>readFile(path.join(build.outputRoot,route,'index.html'),'utf8');
 const documents=new Map(await Promise.all(production.routes.map(async route=>[route,await htmlAt(production,route)])));
+
+test('original public image URLs serve the unchanged source bytes',async()=>{
+  const originals=['bragi-custom-eyewear.jpg','contact-lens-fitting-cover.jpg','designer-eyewear-cover.jpg','essilor-stellest-2-0.jpg','misight-poster.jpeg','ok-lens-poster.png','panda-star-brand.jpg','progressive-lenses-cover.jpg','vision-program-school.jpg','vision-program-screening.jpg','vision-program-team.jpg'];
+  const digest=bytes=>createHash('sha256').update(bytes).digest('hex');
+  const server=createServer(production.outputRoot);server.listen(0,'127.0.0.1');await once(server,'listening');
+  const base='http://127.0.0.1:'+server.address().port;
+  try{
+    for(const filename of originals){
+      const response=await fetch(base+'/'+filename);assert.equal(response.status,200,filename);
+      assert.equal(response.headers.get('content-type'),filename.endsWith('.png')?'image/png':'image/jpeg',filename);
+      const source=await readFile(new URL('../src/legacy-assets/'+filename,import.meta.url));
+      assert.equal(digest(Buffer.from(await response.arrayBuffer())),digest(source),filename+' source hash');
+    }
+  }finally{await new Promise(resolve=>server.close(resolve));}
+});
 
 test('production metadata, schema and sitemap describe each real route',async()=>{
   const titles=new Set();
