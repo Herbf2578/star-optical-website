@@ -1,8 +1,8 @@
-.git/
-.vercel/
+.git
+.vercel
 .env*
-.build/
-dist/
-node_modules/
-test/
+.build
+dist
+node_modules
+test
 *.log
