@@ -59,3 +59,15 @@ contact
 /vision-program-screening.jpg
 /vision-program-team.jpg
 驗證：建置後以本地HTTP請求檢查以上11個URL回應200及圖片Content-Type，並以SHA-256核對回傳內容與保存來源檔一致。Logo、門市照片及favicon原有URL的保留由既有建置流程處理。
+
+2026-10-30：頁面主題、階層及語境連結更新
+四個服務／門市頁的H1改用明確主題，原標題逐字保留為lead引言；沒有新增醫療、價格、資格或營業時間聲稱。
+各詳頁使用獨立breadcrumbLabel，畫面及BreadcrumbList同樣顯示兒童近視管理、成人配鏡、學校合作或北角門市。
+三個服務頁的相關聯絡段落加入/contact/連結；contact的預約段加入三個服務入口，到訪段加入首頁既有的Google Maps搜尋網址。共7個正文連結，沒有新增服務頁或地點資料。
+技術依據（2026-10-30查閱）：
+https://developers.google.com/search/docs/appearance/title-link
+https://developers.google.com/search/docs/appearance/structured-data/breadcrumb
+https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+https://developers.google.com/search/docs/appearance/ai-features
+https://developers.openai.com/api/docs/bots
+以上改善幫助閱讀、導航及內容辨識，不代表已被重新索引、獲得排名或AI引用。發布和正式網址驗證紀錄見工作區review/seo-geo-daily-log.md。
