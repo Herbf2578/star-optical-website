@@ -71,3 +71,16 @@ https://developers.google.com/search/docs/crawling-indexing/links-crawlable
 https://developers.google.com/search/docs/appearance/ai-features
 https://developers.openai.com/api/docs/bots
 以上改善幫助閱讀、導航及內容辨識，不代表已被重新索引、獲得排名或AI引用。發布和正式網址驗證紀錄見工作區review/seo-geo-daily-log.md。
+
+2026-10-31：品牌辨識、標準網址及響應式門市照片
+品牌資料來源：共用BRAND-BRIEF.txt於2026-10-30記錄已登入Meta Business Suite核實Facebook Page ID 275746115902220及連結Instagram @star_optical.hk；並記錄用戶直接確認中文公司名稱「明星眼鏡（香港）有限公司」。本次加入頁尾可見官方社交連結／公司名稱，LocalBusiness.sameAs及legalName與之相符。不推斷英文法定名稱、分店或現行營業時間。
+2026-10-31正式站抽查/index.html、/children-eye-care/index.html、/contact/index.html原本均200，與既有slash頁面重複。新增僅限五個既有頁面的308轉址，保留query，canonical與sitemap維持原五條路徑。
+門市照片原檔SHA-256：9f04d254a93a8c99fcb9687a9469af8179edb09a2e656fc01d9ad4fdca8588e1（2048×1536 JPEG，539724 bytes）。
+新增src/assets/star-optical-shop-640.avif（640×480，26672 bytes）、star-optical-shop-1080.avif（1080×810，66284 bytes）、star-optical-shop-1200.avif（1200×900，78959 bytes）。這三個檔案逐byte複製自同工作區star-optical-next/.next/cache/images/內已存在的Next/Image衍生檔，不是新生成門市圖，也沒有編輯原圖。快取鍵按/images/star-optical-shop.jpg、quality75、image/avif及各寬度對應；該專案public/images原JPEG與本專案SHA-256一致。原圖來源見star-optical-next/docs/content-sources.md；1080及1200回應大小亦與其docs/performance.json吻合。正式頁面只引用本專案靜態副本，不依賴Next快取存續。保留JPEG fallback、alt、width/height、fetchpriority及所有舊圖片URL。
+技術依據（2026-10-31查閱）：
+https://developers.google.com/search/docs/appearance/structured-data/organization
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+https://developers.google.com/search/docs/appearance/google-images
+https://vercel.com/docs/project-configuration/vercel-json
+https://vercel.com/kb/guide/how-do-i-perform-vercel-redirects-based-on-query-strings
+Google支援picture／AVIF且需要img src fallback；只按實際載入檔案大小報告節省，不把壓縮率當Core Web Vitals或排名改善證明。

@@ -3,7 +3,7 @@ import {readFile,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {root} from './build.mjs';
-const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml'};
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.avif':'image/avif','.svg':'image/svg+xml'};
 export function createServer(directory=path.join(root,'dist')) {
   const base=path.resolve(directory);
   return http.createServer(async(req,res)=>{
@@ -15,7 +15,11 @@ export function createServer(directory=path.join(root,'dist')) {
       if(target!==base&&!target.startsWith(base+path.sep)){res.writeHead(403);return res.end('Forbidden');}
       let filename=target;
       try {
-        if((await stat(filename)).isDirectory()) {
+        const entry=await stat(filename);
+        if(entry.isFile()&&requestUrl.pathname.endsWith('/index.html')) {
+          res.writeHead(308,{Location:requestUrl.pathname.slice(0,-'index.html'.length)+requestUrl.search});return res.end();
+        }
+        if(entry.isDirectory()) {
           if(!pathname.endsWith('/')){res.writeHead(308,{Location:requestUrl.pathname+'/'+requestUrl.search});return res.end();}
           filename=path.join(filename,'index.html');
         }
