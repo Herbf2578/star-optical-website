@@ -1,6 +1,11 @@
 {
   "name": "明星眼鏡",
   "alternateName": "Star Optical",
+  "legalName": "明星眼鏡（香港）有限公司",
+  "socialProfiles": [
+    {"name": "Facebook", "url": "https://www.facebook.com/275746115902220"},
+    {"name": "Instagram", "url": "https://www.instagram.com/star_optical.hk/"}
+  ],
   "origin": "https://www.staropticalhk.com",
   "phone": "+85225780013",
   "displayPhone": "2578 0013",

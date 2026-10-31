@@ -39,6 +39,12 @@ test('production metadata, schema and sitemap describe each real route',async()=
     const business=schema['@graph'].find(entity=>entity['@type']==='LocalBusiness');
     assert.equal(business.telephone,'+85225780013');
     assert.equal(business.contactPoint.url,'https://wa.me/85256203542');
+    assert.equal(business.legalName,'明星眼鏡（香港）有限公司');
+    assert.deepEqual(business.sameAs,['https://www.facebook.com/275746115902220','https://www.instagram.com/star_optical.hk/']);
+    const footer=html.match(/<footer>([\s\S]*?)<\/footer>/)?.[1];
+    assert.ok(footer?.includes(business.legalName),route+' visible legal name must match schema');
+    const socialLinks=[...footer.matchAll(/<a\b[^>]*href="(https:\/\/[^\"]+)"/g)].map(match=>match[1].replaceAll('&amp;','&'));
+    assert.deepEqual(socialLinks,business.sameAs,route+' visible social links must match sameAs');
     assert.ok(!('aggregateRating'in business)); assert.ok(!('openingHours'in business));
     assert.equal(schema['@graph'].find(entity=>entity['@type']==='WebPage').url,'https://www.staropticalhk.com'+route);
   }
@@ -65,6 +71,60 @@ test('all local navigation and media resolve; external contact targets are corre
     }
     assert.ok(!html.includes('4.9 / 5'));
   }
+});
+
+test('responsive image candidates resolve and AVIF files serve their unchanged source bytes',async()=>{
+  const candidates=new Set();
+  for(const[route,html]of documents){
+    for(const match of html.matchAll(/\bsrcset="([^"]+)"/g)){
+      for(const candidate of match[1].split(',')){
+        const raw=candidate.trim().split(/\s+/)[0].replaceAll('&amp;','&');
+        const url=new URL(raw,'https://www.staropticalhk.com'+route);
+        if(url.origin!=='https://www.staropticalhk.com')continue;
+        await access(path.join(production.outputRoot,url.pathname));
+        candidates.add(url.pathname);
+      }
+    }
+  }
+  const server=createServer(production.outputRoot);server.listen(0,'127.0.0.1');await once(server,'listening');
+  const base='http://127.0.0.1:'+server.address().port;
+  try{
+    for(const width of [640,1080,1200]){
+      const image='/assets/star-optical-shop-'+width+'.avif';
+      assert.ok(candidates.has(image),image+' missing from srcset');
+      const response=await fetch(base+image);assert.equal(response.status,200,image);
+      assert.equal(response.headers.get('content-type'),'image/avif',image);
+      const source=await readFile(new URL('../src'+image,import.meta.url));
+      assert.deepEqual(Buffer.from(await response.arrayBuffer()),source,image+' source bytes');
+    }
+  }finally{await new Promise(resolve=>server.close(resolve));}
+});
+
+test('only real index.html alternatives redirect permanently and preserve query strings',async()=>{
+  const config=JSON.parse(await readFile(new URL('../vercel.json',import.meta.url),'utf8'));
+  const expected=production.routes.map(route=>({source:route+'index.html',destination:route,permanent:true}));
+  assert.deepEqual(config.redirects,expected,'Vercel redirects must cover exactly the real pages');
+  const server=createServer(production.outputRoot);server.listen(0,'127.0.0.1');await once(server,'listening');
+  const base='http://127.0.0.1:'+server.address().port;
+  const query='?utm_source=chatgpt.com&utm_campaign=children%20eye%20care&ref=a%2Fb&ref=c';
+  try{
+    for(const{source,destination}of expected){
+      for(const suffix of ['',query]){
+        const response=await fetch(base+source+suffix,{redirect:'manual'});
+        assert.equal(response.status,308,source+suffix);
+        assert.equal(response.headers.get('location'),destination+suffix,source+suffix);
+      }
+      const canonical=await fetch(base+destination,{redirect:'manual'});
+      assert.equal(canonical.status,200,destination+' must not redirect again');
+    }
+    for(const missing of ['/missing/index.html','/contact/missing/index.html']){
+      const response=await fetch(base+missing+query,{redirect:'manual'});
+      assert.equal(response.status,404,missing);
+      assert.equal(response.headers.get('location'),null,missing+' must not redirect');
+      assert.equal(response.headers.get('x-robots-tag'),'noindex, follow');
+      assert.ok((await response.text()).includes('找不到這個頁面'));
+    }
+  }finally{await new Promise(resolve=>server.close(resolve));}
 });
 
 test('preview cannot accidentally advertise production indexability',async()=>{

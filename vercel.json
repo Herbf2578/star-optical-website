@@ -3,5 +3,12 @@
   "framework": null,
   "buildCommand": "node scripts/build.mjs",
   "outputDirectory": "dist",
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/children-eye-care/index.html", "destination": "/children-eye-care/", "permanent": true },
+    { "source": "/adult-eyewear/index.html", "destination": "/adult-eyewear/", "permanent": true },
+    { "source": "/school-vision-screening/index.html", "destination": "/school-vision-screening/", "permanent": true },
+    { "source": "/contact/index.html", "destination": "/contact/", "permanent": true }
+  ]
 }
