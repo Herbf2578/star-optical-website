@@ -4,6 +4,7 @@ import { mkdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const origin = 'https://www.staropticalhk.com';
+const applicationOrigin = new URL(process.env.PLAYWRIGHT_BASE_URL ?? 'http://127.0.0.1:3000').origin;
 const phone = 'tel:+85225780013';
 const whatsapp = '85256203542';
 const messages = {
@@ -235,7 +236,7 @@ test('contact form validates, previews without sending, encodes text and keeps d
   const outbound: string[] = [];
   page.on('request', request => {
     const url = new URL(request.url());
-    if (request.method() !== 'GET' || !['127.0.0.1', 'localhost'].includes(url.hostname)) outbound.push(`${request.method()} ${request.url()}`);
+    if (request.method() !== 'GET' || url.origin !== applicationOrigin) outbound.push(`${request.method()} ${request.url()}`);
   });
   const form = page.locator('form.enquiry-form');
   const submit = page.getByRole('button', { name: '生成 WhatsApp 查詢訊息' });
@@ -454,7 +455,7 @@ test('form explains three steps and moves focus to the unsent preview without op
   const storage = await page.evaluate(() => ({ local: { ...localStorage }, session: { ...sessionStorage } }));
   const outbound: string[] = [];
   page.on('request', request => {
-    if (request.method() !== 'GET' || !['127.0.0.1', 'localhost'].includes(new URL(request.url()).hostname)) outbound.push(request.url());
+    if (request.method() !== 'GET' || new URL(request.url()).origin !== applicationOrigin) outbound.push(request.url());
   });
   await page.getByLabel('您的稱呼').fill('測試稱呼');
   await page.getByRole('checkbox').check();

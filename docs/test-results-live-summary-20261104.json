@@ -1,0 +1,356 @@
+{
+  "checkedAt": "2026-11-04T02:46:30.253Z",
+  "origin": "https://www.staropticalhk.com",
+  "uniqueTests": 48,
+  "finalPassed": 48,
+  "firstRun": {
+    "passed": 33,
+    "failed": 15,
+    "report": "test-results-live-20261104.json"
+  },
+  "networkFailureRerun": {
+    "passed": 15,
+    "failed": 0,
+    "report": "test-results-live-rerun-20261104.json"
+  },
+  "note": "Initial Chrome navigation errors included ERR_CONNECTION_TIMED_OUT and ERR_NETWORK_ACCESS_DENIED. No application change or protection change was made before the successful rerun.",
+  "screenshots": 12,
+  "results": [
+    {
+      "id": "5c02723ad68c2a0d50c5-5017ee94886635e89a73",
+      "title": "all six routes have unique titles, descriptions and H1 headings",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-1cd86e1c731b7051a53c",
+      "title": "home: metadata, business facts, semantic content and working links",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-94ae136cf4402ad65156",
+      "title": "home: desktop screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-9872a3b0cb4856b85bd0",
+      "title": "home: mobile screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-594d612e632acf7397d9",
+      "title": "home: no horizontal overflow at all five target widths",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "timedOut"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-591b63157848fd7191ae",
+      "title": "home: FAQ opens with keyboard and closes again",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-dd5d9542ad187b826351",
+      "title": "children: metadata, business facts, semantic content and working links",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-28338aaf66311f3467d5",
+      "title": "children: desktop screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-2df44a864dd22518a641",
+      "title": "children: mobile screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-9b1a03bdd12b4aeb7773",
+      "title": "children: no horizontal overflow at all five target widths",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-7d092980836e45825927",
+      "title": "children: FAQ opens with keyboard and closes again",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-63358eb14c95db837c5a",
+      "title": "adult: metadata, business facts, semantic content and working links",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-75cbb42f250f5df456f7",
+      "title": "adult: desktop screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-65af09400eb1d5d8e780",
+      "title": "adult: mobile screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-be74700b99c02b3ef707",
+      "title": "adult: no horizontal overflow at all five target widths",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-1b619b82ac616fb25fe8",
+      "title": "adult: FAQ opens with keyboard and closes again",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-cdf788a263ff7f056de7",
+      "title": "school: metadata, business facts, semantic content and working links",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-21fba4a2ff63a75e59f2",
+      "title": "school: desktop screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-aeaedf03815696324006",
+      "title": "school: mobile screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": true,
+      "firstStatus": "failed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-679a3c13eee995bb626d",
+      "title": "school: no horizontal overflow at all five target widths",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-637195d0fa52f72924cb",
+      "title": "school: FAQ opens with keyboard and closes again",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-9a6035d4ef5d73b3fa42",
+      "title": "frames: metadata, business facts, semantic content and working links",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-34caaa0939f33ca1ba1e",
+      "title": "frames: desktop screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-f0a4cd553baa16ee0d96",
+      "title": "frames: mobile screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-00726262e41a3de90c85",
+      "title": "frames: no horizontal overflow at all five target widths",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-32a015c61a1651cf9204",
+      "title": "frames: FAQ opens with keyboard and closes again",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-05ac526ebc77120bdf41",
+      "title": "contact: metadata, business facts, semantic content and working links",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-c38a9e7ea5e39a0d3078",
+      "title": "contact: desktop screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-67dfc84bfce5cddcee64",
+      "title": "contact: mobile screenshot and WCAG accessibility",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-6162accaa00e0cdcc973",
+      "title": "contact: no horizontal overflow at all five target widths",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-7cf319ce38e1f70e39c7",
+      "title": "contact: FAQ opens with keyboard and closes again",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-ea3ad8f6d7b70a79c710",
+      "title": "mobile menu supports Escape, focus return and all six navigation links",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-06f86b8b5f9201e42992",
+      "title": "frame filters change the visible catalogue and preserve precise enquiry links",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-4f8786f791670c9a28dc",
+      "title": "contact form validates, previews without sending, encodes text and keeps data out of storage",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-c1037e36e2eae3021ffa",
+      "title": "contact form rejects a name made entirely of spaces",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-5e1099a81d492d4ad32f",
+      "title": "sitemap, robots and unknown routes have appropriate responses",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-b3907daedaa9ee29222d",
+      "title": "homepage offers three visible audience paths with matching service and WhatsApp destinations",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-0b847edeb09118d119d8",
+      "title": "every hero shows the verified North Point address and an exact map destination",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-2473ea2f60d8607f0b34",
+      "title": "shared call to action offers one WhatsApp action and a service-specific enquiry form route",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-d01cc68c2cd2f32abdb0",
+      "title": "known contact service parameters select the intended enquiry without inventing a message",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-0af9a1bee3fd661c1659",
+      "title": "contact parameters reject unknown or duplicate values without echoing arbitrary topic content",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-847966afc47dc7960d23",
+      "title": "Panda Star enquiry carries the frame service and its safe topic into the form and preview",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-4d9fa692229331392b8d",
+      "title": "BRAGi topic is whitelisted and shown only as an editable frame enquiry draft",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-5fe139faf884c48d9b3f",
+      "title": "form explains three steps and moves focus to the unsent preview without opening or storing a submission",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-6a568fcfbc8b101b47ac",
+      "title": "each child-management plan asks about that exact plan instead of losing the choice",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-863be8b5e91f70dc5f20",
+      "title": "mobile child comparison offers three readable summaries before the detailed table",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-2ae0e9497edae514856f",
+      "title": "service-page quick navigation has real targets and works with the keyboard",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    },
+    {
+      "id": "5c02723ad68c2a0d50c5-e68d48f5d90b4157eae6",
+      "title": "school enquiry template requests school administration details and no student records",
+      "status": "passed",
+      "rerun": false,
+      "firstStatus": "passed"
+    }
+  ]
+}

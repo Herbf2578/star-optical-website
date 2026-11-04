@@ -4,7 +4,7 @@
 
 最新的2026-10-31商業評估整合版，已按「網站商業評估」第二輪建議調整三類顧客入口、真實門市展示、WhatsApp步驟、方案查詢及品牌表單脈絡。評估來源與採用情況見 [商業評估整合報告](docs/business-review-20261031/implementation.md)。聯絡頁現在會按白名單服務／品牌參數產生表單，仍沒有儲存或寄出查詢資料。
 
-2026-10-31已按用戶意見補充六頁圖片：加入15張原創照片式示意素材，兒童方案及流程、成人服務及生活情境、學校活動、首頁服務、鏡架目錄及聯絡頁均有更多圖片。新版截圖見 [圖片加強版截圖](docs/screenshots-20261031/index.html)，本輪改動與驗證見 [圖片加強版報告](docs/image-revision-20261031.md)。原有2026-10-30測試紀錄仍保留。
+2026-10-31已按用戶意見補充六頁圖片：加入15張原創照片式示意素材，兒童方案及流程、成人服務及生活情境、學校活動、首頁服務、鏡架目錄及聯絡頁均有更多圖片。正式網站截圖見 [桌面與手機截圖](docs/screenshots-live-20261104/index.html)，本輪改動與驗證見 [圖片加強版報告](docs/image-revision-20261031.md)。原有2026-10-30測試紀錄仍保留。
 
 2026-11-04 用戶已授權正式部署。發布沿用原有 Vercel `star-optical / website-2`，以最新 `origin/main 18f874b` 建立獨立發布分支；原 `star-optical-website` 的未提交追蹤工作保留。發布及回復狀態以 [本次發布紀錄](docs/release-20261104.md) 為準。
 
@@ -30,7 +30,7 @@
 | 品牌鏡架 | http://localhost:3000/frames/ |
 | 聯絡我們 | http://localhost:3000/contact/ |
 
-本地網址只在本機預覽伺服器運行時可用。正式網址為 https://www.staropticalhk.com/，發布是否完成請參閱本次發布紀錄。四個原有服務／聯絡路徑已保留，品牌鏡架頁另用 `/frames/`。
+本地網址只在本機預覽伺服器運行時可用。正式網址為 https://www.staropticalhk.com/，六頁新版已於2026-11-04取代舊站，詳見本次發布紀錄。四個原有服務／聯絡路徑已保留，品牌鏡架頁另用 `/frames/`。
 
 ## 已建立的功能
 
@@ -42,7 +42,7 @@
 - 獨立頁面標題、說明、Canonical、Open Graph、語意標題、商戶及麵包屑結構化資料、Sitemap 與 Robots。
 - Next/Image 圖片處理、鍵盤焦點樣式、表單標籤、跳至主要內容及基本安全回應標頭。
 
-功能的實際測試結果與截圖請看 [測試報告](docs/test-report.md) 及 [截圖資料夾](docs/screenshots/)。本 README 不把功能存在等同於已通過測試，也不聲稱已達到特定性能分數、搜尋排名或 Core Web Vitals 指標。
+正式發布、實測與回復步驟請看 [發布紀錄](docs/release-20261104.md) 及 [正式網站截圖](docs/screenshots-live-20261104/index.html)。早期本機測試見 [測試報告](docs/test-report.md)。本 README 不把功能存在等同於已通過測試，也不聲稱已達到特定性能分數、搜尋排名或 Core Web Vitals 指標。
 
 ## WhatsApp 查詢如何運作
 

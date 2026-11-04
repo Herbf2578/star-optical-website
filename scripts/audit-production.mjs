@@ -27,10 +27,10 @@ for (let index = 2; index < process.argv.length; index++) {
   const item = process.argv[index];
   assert.ok(item.startsWith('--'), 'Use named --options.');
   const [key, inline] = item.slice(2).split(/=(.*)/s, 2);
-  args[key] = inline ?? (['browser', 'headers-stdin', 'help'].includes(key) ? true : process.argv[++index]);
+  args[key] = inline ?? (['browser', 'headers-stdin', 'help', 'staged'].includes(key) ? true : process.argv[++index]);
 }
 if (args.help) {
-  console.log('Usage: node scripts/audit-production.mjs --base URL --mode production|preview [--transport fetch|vercel] [--vercel-cli /path/vc.js] [--browser] [--headers-stdin] [--output report.json] [--asset-root /path/public]');
+  console.log('Usage: node scripts/audit-production.mjs --base URL --mode production|preview [--transport fetch|vercel] [--vercel-cli /path/vc.js] [--browser] [--staged] [--headers-stdin] [--output report.json] [--asset-root /path/public]');
   console.log('Credentials: AUDIT_AUTH_HEADERS_JSON or --headers-stdin. Vercel transport uses existing CLI authentication; no token is printed.');
   process.exit(0);
 }
@@ -42,6 +42,8 @@ const mode = args.mode ?? process.env.AUDIT_MODE ?? 'production';
 assert.ok(['production', 'preview'].includes(mode), 'Mode must be production or preview.');
 const transport = args.transport ?? process.env.AUDIT_TRANSPORT ?? 'fetch';
 assert.ok(['fetch', 'vercel'].includes(transport), 'Transport must be fetch or vercel.');
+const staged = Boolean(args.staged);
+if (staged) assert.ok(mode === 'production' && transport === 'vercel' && base.hostname.endsWith('.vercel.app'), '--staged only applies to authenticated Vercel deployment hostnames, never the official domain.');
 const publicRoot = path.resolve(args['asset-root'] ?? path.join(projectRoot, 'public'));
 const canonicalOrigin = 'https://www.staropticalhk.com';
 const routes = ['/', '/children-eye-care/', '/adult-eyewear/', '/school-vision-screening/', '/frames/', '/contact/'];
@@ -160,7 +162,7 @@ if (!process.exitCode) {
     assert.equal(response.headers.get('referrer-policy'), 'strict-origin-when-cross-origin');
     const robotHeader = response.headers.get('x-robots-tag') ?? '';
     const robotMeta = meta(response.text, 'robots') ?? '';
-    if (mode === 'production') { assert.doesNotMatch(robotHeader, /noindex|nofollow|none/i); assert.match(robotMeta, /\bindex\b/); assert.doesNotMatch(robotMeta, /noindex|nofollow|none/i); }
+    if (mode === 'production') { if (staged) assert.match(robotHeader, /^(?:noindex)?$/i); else assert.doesNotMatch(robotHeader, /noindex|nofollow|none/i); assert.match(robotMeta, /\bindex\b/); assert.doesNotMatch(robotMeta, /noindex|nofollow|none/i); }
     else { assert.match(robotHeader, /noindex/i); assert.match(robotMeta, /noindex/i); }
     assert.equal(link(response.text, 'canonical'), `${canonicalOrigin}${route}`);
     assert.equal(meta(response.text, 'og:url'), `${canonicalOrigin}${route}`);
@@ -341,7 +343,7 @@ if (!process.exitCode) {
     } finally { await browser.close(); }
   });
 
-  const report = { checkedAt: new Date().toISOString(), base: base.origin, mode, transport, authValuesRecorded: false, browserRequested: Boolean(args.browser), passed: results.filter(result => result.passed).length, failed: results.filter(result => !result.passed).length, results };
+  const report = { checkedAt: new Date().toISOString(), base: base.origin, mode, transport, stagedPlatformNoindexAllowed: staged, authValuesRecorded: false, browserRequested: Boolean(args.browser), passed: results.filter(result => result.passed).length, failed: results.filter(result => !result.passed).length, results };
   if (args.output) { const output = path.resolve(args.output); await mkdir(path.dirname(output), { recursive: true }); await writeFile(output, `${JSON.stringify(report, null, 2)}\n`); }
   console.log(JSON.stringify(report, null, 2));
   if (report.failed) process.exitCode = 1;
