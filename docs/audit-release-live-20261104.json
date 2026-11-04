@@ -1,0 +1,199 @@
+{
+  "checkedAt": "2026-11-04T02:28:12.660Z",
+  "base": "https://www.staropticalhk.com",
+  "mode": "production",
+  "transport": "fetch",
+  "stagedPlatformNoindexAllowed": false,
+  "authValuesRecorded": false,
+  "browserRequested": true,
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "name": "page /",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "indexingMode": "production",
+        "canonical": "https://www.staropticalhk.com/",
+        "whatsappCount": 10,
+        "phoneCount": 5
+      }
+    },
+    {
+      "name": "page /children-eye-care/",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "indexingMode": "production",
+        "canonical": "https://www.staropticalhk.com/children-eye-care/",
+        "whatsappCount": 10,
+        "phoneCount": 3
+      }
+    },
+    {
+      "name": "page /adult-eyewear/",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "indexingMode": "production",
+        "canonical": "https://www.staropticalhk.com/adult-eyewear/",
+        "whatsappCount": 10,
+        "phoneCount": 3
+      }
+    },
+    {
+      "name": "page /school-vision-screening/",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "indexingMode": "production",
+        "canonical": "https://www.staropticalhk.com/school-vision-screening/",
+        "whatsappCount": 7,
+        "phoneCount": 3
+      }
+    },
+    {
+      "name": "page /frames/",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "indexingMode": "production",
+        "canonical": "https://www.staropticalhk.com/frames/",
+        "whatsappCount": 12,
+        "phoneCount": 3
+      }
+    },
+    {
+      "name": "page /contact/",
+      "passed": true,
+      "details": {
+        "status": 200,
+        "indexingMode": "production",
+        "canonical": "https://www.staropticalhk.com/contact/",
+        "whatsappCount": 6,
+        "phoneCount": 4
+      }
+    },
+    {
+      "name": "unique page metadata and internal destinations",
+      "passed": true,
+      "details": {
+        "uniqueTitles": 6,
+        "uniqueDescriptions": 6,
+        "uniqueH1": 6,
+        "internalDestinations": 15
+      }
+    },
+    {
+      "name": "retained homepage and service section anchors",
+      "passed": true,
+      "details": {
+        "homepageAliases": 10,
+        "legacyDetailedPageAnchors": 16
+      }
+    },
+    {
+      "name": "robots, sitemap and unknown-page behavior",
+      "passed": true,
+      "details": {
+        "robotsMode": "production",
+        "sitemapPages": 6,
+        "missingPageStatus": 404
+      }
+    },
+    {
+      "name": "query-preserving permanent redirect /index.html",
+      "passed": true,
+      "details": {
+        "status": 308,
+        "path": "/",
+        "queryPreserved": true
+      }
+    },
+    {
+      "name": "query-preserving permanent redirect /children-eye-care/index.html",
+      "passed": true,
+      "details": {
+        "status": 308,
+        "path": "/children-eye-care/",
+        "queryPreserved": true
+      }
+    },
+    {
+      "name": "query-preserving permanent redirect /adult-eyewear/index.html",
+      "passed": true,
+      "details": {
+        "status": 308,
+        "path": "/adult-eyewear/",
+        "queryPreserved": true
+      }
+    },
+    {
+      "name": "query-preserving permanent redirect /school-vision-screening/index.html",
+      "passed": true,
+      "details": {
+        "status": 308,
+        "path": "/school-vision-screening/",
+        "queryPreserved": true
+      }
+    },
+    {
+      "name": "query-preserving permanent redirect /frames/index.html",
+      "passed": true,
+      "details": {
+        "status": 308,
+        "path": "/frames/",
+        "queryPreserved": true
+      }
+    },
+    {
+      "name": "query-preserving permanent redirect /contact/index.html",
+      "passed": true,
+      "details": {
+        "status": 308,
+        "path": "/contact/",
+        "queryPreserved": true
+      }
+    },
+    {
+      "name": "legacy root and public/assets image compatibility",
+      "passed": true,
+      "details": {
+        "retainedFiles": 20,
+        "sha256Matched": true
+      }
+    },
+    {
+      "name": "Next/Image optimization endpoint",
+      "passed": true,
+      "details": {
+        "contentType": "image/webp",
+        "bytes": 52140,
+        "smallerThanOriginal": true,
+        "renderedOptimizedReferences": 23
+      }
+    },
+    {
+      "name": "contact form SSR and query preselection",
+      "passed": true,
+      "details": {
+        "servicePreselections": 5,
+        "pandaStarContext": true,
+        "staticFormOnly": true
+      }
+    },
+    {
+      "name": "browser WhatsApp preview without sending",
+      "passed": true,
+      "details": {
+        "serviceFlows": 5,
+        "contextualForm": true,
+        "focusMovedToPreview": true,
+        "storageUnchanged": true,
+        "networkSubmissions": 0,
+        "whatsappSent": false
+      }
+    }
+  ]
+}

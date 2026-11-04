@@ -1,0 +1,70 @@
+.service-split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+.service-split h2 { margin-bottom:20px; }
+.service-split p { margin-bottom:20px; }
+.service-lead { font-size:1.08rem; line-height:1.9; }
+.info-panel { padding:32px; border:1px solid #dce5e9; border-radius:14px; background:#fff; box-shadow:0 4px 20px #082b4504; }
+.info-panel h3 { margin:0 0 20px; display:flex; gap:10px; align-items:center; }
+.info-panel p:last-child { margin-bottom:0; }
+.info-panel .check-list { margin:0; }
+.plan-card { overflow:hidden; background:white; border:1px solid #dce5e9; border-radius:14px; box-shadow:0 4px 18px #082b4505; }
+.plan-card-top { min-height:156px; position:relative; display:flex; align-items:center; justify-content:center; color:var(--navy,#082b45); background:linear-gradient(125deg,#edf5f7,#faf7f0); border-bottom:1px solid #e4ecef; }
+.plan-card:nth-child(2) .plan-card-top { background:linear-gradient(125deg,#f7f2e8,#fcfaf6); }
+.plan-card:nth-child(3) .plan-card-top { background:linear-gradient(125deg,#e9f2ed,#f7faf8); }
+.plan-number { position:absolute; top:18px; left:22px; font-size:.85rem; font-weight:600; letter-spacing:.08em; color:#6c7d88; }
+.plan-tag { position:absolute; bottom:14px; right:16px; padding:4px 11px; border:1px solid #d9e1e5; border-radius:30px; background:#fff9; font-size:.75rem; color:#465969; }
+.plan-card-content { padding:28px; }
+.plan-card-content h3 { margin:0 0 5px; font-size:1.45rem; line-height:1.5; }
+.plan-card-content p { margin:0 0 18px; }
+.plan-card-content .plan-subtitle { margin:0 0 15px; color:#8c6a31; font-size:.875rem; font-weight:600; }
+.plan-card-content .check-list { min-height:100px; }
+.plan-card-content .button { margin-top:12px; width:100%; }
+.table-scroll { max-width:100%; overflow-x:auto; border:1px solid #dce5e9; border-radius:14px; background:#fff; }
+.compare-table { width:100%; min-width:740px; border-collapse:collapse; text-align:left; font-size:.94rem; }
+.compare-table th,.compare-table td { padding:19px 22px; border-bottom:1px solid #e4eaed; vertical-align:top; line-height:1.75; }
+.compare-table thead th { color:#fff; background:#082b45; font-weight:600; }
+.compare-table tbody th { width:18%; color:#082b45; background:#f7fafb; font-weight:600; }
+.compare-table tbody tr:last-child th,.compare-table tbody tr:last-child td { border-bottom:0; }
+.table-scroll + .note { margin-top:16px; }
+.service-large-icon { display:inline-flex; color:#a57933; margin:0 0 20px; }
+.progressive-panel .info-panel { background:linear-gradient(145deg,#faf7f0,#fff); }
+.lifestyle-grid .feature-card { background:#fff; }
+.service-image-band { display:grid; grid-template-columns:1.1fr 1fr; background:#fff; border:1px solid #dce5e9; border-radius:16px; overflow:hidden; }
+.service-band-photo { min-height:340px; position:relative; }
+.service-band-copy { padding:42px; align-self:center; }
+.service-band-copy h2 { margin-bottom:18px; }
+.service-band-copy>p:not(.eyebrow) { margin-bottom:24px; line-height:1.85; }
+.plan-card-photo { min-height:0; aspect-ratio:16 / 10; overflow:hidden; }
+.plan-card-photo .plan-number { z-index:1; top:14px; left:15px; display:grid; place-items:center; width:34px; height:34px; border-radius:50%; color:#fff; background:#082b45e8; box-shadow:0 2px 10px #082b451a; }
+.plan-card-photo .plan-tag { z-index:1; top:16px; right:15px; bottom:auto; border-color:#ffffffa6; background:#fffffff0; color:#233f51; font-weight:600; }
+.plan-card-photo .photo-tag { z-index:1; }
+.plan-card-content h3 { display:flex; align-items:center; gap:9px; }
+.plan-card-content h3 svg { flex-shrink:0; color:#a57933; }
+.followup-photo-split { align-items:center; }
+.followup-photo-split .followup-photo { margin-bottom:27px; }
+.photo-info-panel { border:1px solid #dce5e9; border-radius:14px; overflow:hidden; background:#fff; }
+.photo-info-panel>figure { margin:0; border:0; border-radius:0; }
+.photo-info-panel .info-panel { border:0; border-radius:0; box-shadow:none; }
+.school-preparation-layout { display:grid; grid-template-columns:1fr 1.12fr; gap:38px; align-items:center; }
+.school-photo-mosaic { min-width:0; padding:0 0 6px; }
+.school-photo-mosaic>figure:first-child { width:92%; margin:0; }
+.school-photo-mosaic>figure+figure { width:68%; margin:-55px 0 0 auto; border:7px solid #fff; box-shadow:0 8px 25px #082b4515; }
+.school-preparation-layout .school-preparation-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.school-preparation-grid .feature-card { padding:24px; }
+.comparison-mobile-summary { display:none; }
+.decision-next { display:flex; align-items:center; justify-content:space-between; gap:28px; margin-top:26px; padding:26px 28px; border:1px solid #e4d6b9; border-radius:12px; background:#faf6ed; }
+.decision-next h3 { font-size:1.3rem; margin:0 0 8px; }
+.decision-next p { margin:0; max-width:640px; font-size:.9rem; line-height:1.85; }
+.decision-next>.button { flex-shrink:0; }
+.adult-service-options>.feature-card { display:flex; flex-direction:column; }
+.adult-service-options .feature-photo { flex-shrink:0; }
+.adult-service-options .feature-card-body,.adult-service-options .prose-small { display:flex; flex-direction:column; flex:1; }
+.adult-service-options .prose-small>p { margin:0 0 18px; }
+.adult-service-options .prose-small>.button { margin-top:auto; width:100%; padding:11px 10px; font-size:12px; gap:7px; }
+.school-enquiry-actions { display:flex; flex-wrap:wrap; align-items:center; gap:18px 24px; padding-top:30px; }
+.school-enquiry-actions>p { flex-basis:100%; margin:0; font-size:.85rem; color:#536474; line-height:1.8; }
+@media(max-width:1023px) { .service-split { gap:30px; }.plan-card-content{padding:22px}.service-band-copy{padding:30px} }
+@media(max-width:767px) { .service-split,.service-image-band { grid-template-columns:1fr; gap:26px; }.service-image-band{gap:0}.service-band-photo{min-height:260px}.service-band-copy{padding:28px 24px}.info-panel{padding:26px 22px}.plan-card-content .check-list{min-height:0}.plan-card-top{min-height:142px}.plan-card-content{padding:25px}.compare-table th,.compare-table td{padding:16px 18px} }
+@media(max-width:1023px) { .school-preparation-layout { gap:25px; }.school-preparation-grid .feature-card { padding:20px; }.school-preparation-grid .feature-card h3 { font-size:1.05rem; } }
+@media(max-width:767px) { .plan-card-photo { min-height:0; }.followup-photo-split .followup-photo { margin-bottom:24px; }.school-preparation-layout { grid-template-columns:1fr; gap:28px; }.school-photo-mosaic { max-width:540px; width:100%; margin:0 auto; }.school-preparation-layout .school-preparation-grid { gap:14px; }.school-preparation-grid .feature-card { padding:20px 16px; } }
+@media(max-width:389px) { .school-preparation-layout .school-preparation-grid { grid-template-columns:1fr; }.school-photo-mosaic>figure+figure { margin-top:-35px; } }
+@media(max-width:767px) { .comparison-mobile-summary { display:grid; gap:12px; margin:0 0 20px; }.comparison-mobile-summary>article { padding:18px 19px; border:1px solid #dce5e9; border-left:3px solid #c8a15a; border-radius:8px; background:#fff; }.comparison-mobile-summary h3 { font-size:1rem; margin:0 0 6px; }.comparison-mobile-summary p { margin:0; font-size:.84rem; line-height:1.85; }.decision-next { flex-direction:column; align-items:stretch; padding:23px 22px; gap:20px; }.decision-next h3 { font-size:1.18rem; }.decision-next .button { width:100%; }.school-enquiry-actions { align-items:flex-start; gap:16px; }.school-enquiry-actions>.button { width:100%; } }

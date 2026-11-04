@@ -1,0 +1,19 @@
+{
+  "createdDate": "2026-10-30",
+  "tool": "built-in image_gen.imagegen",
+  "usage": "AI-generated illustrative website photographs; do not describe people as actual employees or patients, surroundings as actual premises, or eyeglasses as actual inventory.",
+  "assets": [
+    {
+      "file": "public/images/children-care.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium optometry website hero photograph, landscape 16:9. Create an original editorial-style scene of a Chinese boy aged about eight having an eye examination at a slit lamp, with a female East Asian optometry practitioner in a clean white coat seated to his right. Bright warm cream clinic interior, subtle sage foliage and glass shelving, daylight, reassuring calm professional atmosphere, natural skin texture, premium Hong Kong healthcare brand aesthetic, restrained navy details. Mid-wide crop showing faces, slit lamp, hands and shoulders clearly, subjects centered and right, balanced uncluttered composition. This is an illustrative fictional scene, not a real clinic, staff member or patient. No logos, no lettering, no text, no watermark, no collage, no borders."
+    },
+    {
+      "file": "public/images/adult-care.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium optometry website service photograph, landscape 16:9. An original editorial scene of an East Asian woman in her thirties trying elegant unbranded tortoiseshell eyeglasses while an East Asian female optometry consultant in a white coat gently adjusts the temple fit. Warm bright upscale optical shop in cream, warm oak, softly blurred glasses display and subtle green plants, natural soft window light, relaxed gentle smile, professional calm mood, accurate human hands and eyewear. Mid-wide waist-up composition with both women visible, slightly right weighted but no empty text region needed. Fictional illustrative people and shop, not real staff or customers. No logos, no brand names, no letters, no text, no watermark, no collage or border."
+    },
+    {
+      "file": "public/images/frames-collection.png",
+      "prompt": "Use case: product-mockup. Asset type: premium eyewear website hero photograph, landscape 16:9. Create an original exceptionally refined still-life photograph of three different unbranded eyeglasses: a classic tortoiseshell acetate frame in front on a low cream limestone plinth, a delicate thin warm gold round metal frame behind on a taller ivory stone plinth, and a refined black rectangular frame on a dark warm charcoal marble block. All glasses physically coherent and believable, lenses clear. Warm side light, generous cream background, subtle sage plant bokeh and elegant optical boutique softness, natural stone textures and soft long shadows, quiet luxury product editorial aesthetic. Wide horizontal composition, clear separation between frames, no people. These are illustrative fictional designs, not inventory. No logos, no brand marks, no lettering, no text, no watermark, no collage, no border."
+    }
+  ]
+}

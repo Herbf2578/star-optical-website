@@ -1,0 +1,56 @@
+{
+  "createdDate": "2026-10-31",
+  "tool": "built-in image_gen.imagegen",
+  "usage": "九張原創 AI 示意圖片；人物不代表真實職員、客戶或個案，場景不代表真實門市，鏡架／隱形鏡不代表現貨、品牌產品或授權關係。face-scan 是概念式量度情境，不是特定品牌設備或真實檢查結果。",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "assets": [
+    {
+      "file": "public/images/editorial/ok-lens.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium optometry service card photograph, landscape 3:2. Original macro editorial photo of a tiny transparent rigid gas-permeable orthokeratology contact lens resting concave-side up on one clean human fingertip, delicate convex transparent lens edge clearly visible, no eye contact. Aquamarine and soft teal clinical bokeh, soft warm daylight, restrained blue highlights, meticulous realistic surface optics, premium clean healthcare feel. Close crop with ample surrounding negative space, natural fingernail out of frame, one fingertip only. Illustrative lens, not a product brand or actual stock. No logos, no packaging, no lettering, no text, no watermark, no collage, no border.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/daily-lens.png",
+      "prompt": "Use case: product-mockup. Asset type: premium optometry service card photograph, landscape 3:2. Original refined still life of an unbranded daily disposable soft contact lens blister tray with one transparent soft contact lens, plus a second sealed white blister pack subtly behind, on a clean pale cream surface with a soft lilac paper backdrop. Airy gentle daylight, a little lavender and icy aqua reflected light, delicate translucent lens material visible, realistic small-scale product optics, welcoming clinical editorial photography. All packs completely blank, no printed brand or label. Fictional illustrative products, not real inventory. No text, no logos, no numbers, no watermark, no collage or border.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/children-frames.png",
+      "prompt": "Use case: product-mockup. Asset type: premium children's eyewear website card photograph, landscape 3:2. Original bright editorial still-life photograph of one pair of charming unbranded children's eyeglasses in a cheerful transparent blue-to-teal acetate frame, clear round-rectangle lenses, small comfortable bridge, on a soft pastel yellow tabletop with peach geometric blocks and a subtle mint background. Warm natural side light, soft playful colors, high-quality realistic eyewear detail, tasteful and clean rather than toy-like. Glasses are the hero, generous crop, no people. Fictional illustrative eyeglass design, not an actual product offered. No brand marks, logos, text, numbers, watermark, collage or border.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/consultation.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium optometry website consultation card photograph, landscape 3:2. Original welcoming editorial photograph of an East Asian parent mother and a Chinese school-age child seated together at a cream optical consultation desk talking to an East Asian female optometry practitioner in a white coat. Practitioner shows one unbranded eyeglass frame to the child with a gentle encouraging expression, mother listening. Warm natural daylight, light oak details, muted coral pink chair and sage plants, tasteful clean clinic, professional and reassuring. Realistic anatomy and hands, ordinary clothing, mid-wide waist-up composition, all three faces visible, no close medical procedure. Fictional illustrative people and clinic, not real clients or staff. No logos, no lettering, no text, no watermark, no collage, no borders.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/eye-exam.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium optometry website eye examination card photograph, landscape 3:2. Original close editorial scene of an East Asian man in his thirties using a modern white autorefractor during an optometry examination, chin resting naturally on the chin rest, eye aligned to patient side. A small portion of an optometry practitioner's hand operating equipment is visible. Warm cream clinic with restrained teal upholstery and light oak surfaces, soft daylight, realistic optical examination instrument, calm professional mood, crisp equipment and natural skin detail. Three-quarter side view, patient and complete chin rest area visible, no identifiable manufacturer. Fictional illustrative person and equipment. No logos, text, numbers, screens with lettering, watermark, collage or borders.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/work-vision.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium eyewear website lifestyle card photograph, landscape 3:2. Original editorial photograph of a young East Asian male professional in his early thirties wearing refined thin unbranded metal eyeglasses and a pale blue shirt while comfortably working at a laptop in a bright home office. Airy muted blue room, cream desk, subtle plant and pale timber shelf, natural side daylight, soft focused expression, elegant professional lifestyle, realistic glasses lenses and hands. Medium-wide view with laptop and upper body, relaxed posture, clear uncluttered composition. Fictional illustrative person, not a real client. No logos, brand marks, lettering, laptop logos, text, watermark, collage or border.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/reading-vision.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium eyewear website lifestyle card photograph, landscape 3:2. Original editorial portrait of an East Asian woman in her forties wearing elegant unbranded tortoiseshell eyeglasses, reading a hardcover book comfortably by a large sunlit window. Warm honey daylight, sage green plant nearby, soft cream upholstery, a muted olive green wall, relaxed thoughtful expression. Natural skin texture, realistic hands holding book, glasses with subtle natural reflections, peaceful comfortable everyday lifestyle. Waist-up view, face and book both visible, balanced uncluttered composition. Fictional illustrative person, not a real client. Book pages show no readable lettering, no logos, no text, no watermark, no collage, no border.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/driving-vision.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium eyewear website lifestyle card photograph, landscape 3:2. Original natural editorial photograph of an East Asian adult man in his forties wearing sophisticated unbranded black rectangular eyeglasses seated in the driver's seat of a safely parked car. Side profile from front passenger seat, relaxed still posture looking through windscreen, daylight and soft green leafy bokeh through window. Cream and charcoal car interior, muted forest green details outside, premium calm photographic style, believable frame fit and natural facial proportions. Vehicle visibly stationary in a quiet tree-lined parking area; no motion blur, no phone, no moving driving action. Fictional illustrative person. No car logos, glasses brands, letters, text, watermark, collage or border.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    },
+    {
+      "file": "public/images/editorial/face-scan.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: premium eyewear website conceptual technology photograph, landscape 3:2. Original editorial optical fitting consultation: an East Asian adult woman sitting comfortably facing an East Asian optometry practitioner in a white coat who holds a tablet aimed toward her face. View over practitioner's shoulder to woman's face and visible tablet screen. Tablet displays a simple clean face outline with a subtle geometric wireframe scan and a pair of eyeglass outline shapes, no written UI text, no numerical data, no logos. Warm cream modern optical clinic, teal-blue upholstery, restrained navy accents, natural daylight, realistic skin and device materials. This is a fictional conceptual illustration of facial measurement technology, not any specific brand equipment or actual scan service result. Mid-wide view, woman's face fully visible, tablet at side not obscuring face. No brand marks, logos, letters, numbers, watermark, collage or borders.",
+      "review": "已目視檢查：主題、構圖、無可讀文字或品牌，清楚人物／商品示意界線。"
+    }
+  ]
+}
