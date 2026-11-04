@@ -1,0 +1,55 @@
+{
+  "createdAt": "2026-10-31",
+  "timezone": "Asia/Hong_Kong",
+  "generator": "OpenAI built-in image_gen.imagegen tool",
+  "mode": "generate",
+  "useCase": "product-mockup",
+  "purpose": "明星眼鏡網站本地預覽的六款無品牌鏡架風格示意圖片",
+  "disclosure": "AI 生成款式示意，不代表實際商品、品牌、材質、功能、價格或庫存。網頁須保留可見示意標籤。",
+  "requestedAspectRatio": "3:2",
+  "transparentBackground": false,
+  "assets": [
+    {
+      "slug": "classic",
+      "file": "public/images/editorial/frame-classic.png",
+      "url": "/images/editorial/frame-classic.png",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a18cee-52f7-7b91-8c6c-cebd136051db\\exec-d25445f3-7e0d-4287-aa98-81c32d8f3053.png",
+      "prompt": "Use case: product-mockup. Asset type: premium eyewear website editorial category photograph. Generate a photorealistic 3:2 landscape image, 1536x1024 composition, of one single unbranded classic rectangular optical eyeglass frame in rich dark tortoiseshell with subtle black edges and clear untinted lenses, resting naturally on a pale cream travertine stone slab. Frame is the unmistakable main subject, whole frame and both temples physically plausible and visible in a slightly elevated three-quarter front view, with generous safe crop margins all around for a website card. Warm ivory backdrop, soft directional daylight, elegant real reflections and delicate shadow, realistic polished acetate texture, exceptionally crisp eyeglasses with a quiet softly defocused backdrop. Sophisticated Hong Kong optical boutique editorial aesthetic. Not an advertisement or poster; no people, no logos, no text, no numbers, no watermark, no brand marks, no fake inventory labels. This is an illustrative generic design, not any real branded product. Create just ONE finished photograph, no collage."
+    },
+    {
+      "slug": "metal",
+      "file": "public/images/editorial/frame-metal.png",
+      "url": "/images/editorial/frame-metal.png",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a18cee-52f7-7b91-8c6c-cebd136051db\\exec-10d9eefa-3821-4b0c-ba3a-bd043bf087f9.png",
+      "prompt": "Use case: product-mockup. Asset type: premium eyewear website editorial category photograph. Generate a photorealistic 3:2 landscape image, 1536x1024 composition, of one single unbranded delicate champagne-gold round optical eyeglass frame with slender metal temples and clear untinted lenses, resting on beautifully folded pale powder blue satin. The whole frame is centered with generous safe crop margins, slightly elevated three-quarter front angle, structurally correct bridge, nose pads, hinges and temples. Refined luminous gold against cool pastel blue, gentle side window light, realistic polished metal reflections and subtle natural lens reflections, fresh airy luxurious mood. Sharp product details, softly receding satin texture, premium contemporary optical catalogue photography. No people, no logos, no text, no numbers, no watermark, no fake brand or product labels. This is a generic illustrative design and not a real branded inventory item. Create just ONE photograph, no collage."
+    },
+    {
+      "slug": "kids",
+      "file": "public/images/editorial/frame-kids.png",
+      "url": "/images/editorial/frame-kids.png",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a18cee-52f7-7b91-8c6c-cebd136051db\\exec-51b2ba65-5e7b-4fe8-beeb-2fa4f47109f6.png",
+      "prompt": "Use case: product-mockup. Asset type: premium optical website children's frame category photograph. Generate a photorealistic 3:2 landscape image, 1536x1024 composition, of one single unbranded child-sized eyeglass frame in vivid teal turquoise with softly rounded rectangular lenses and clear untinted optical lenses. Frame rests on a soft pastel yellow tabletop against a minimal warm peach backdrop. Playful cheerful color through the set itself, clean premium finish, rounded proportions and smooth lightweight-looking temples, realistic connected hinges, bridge and two temples, whole frame visible at a natural slightly elevated three-quarter front angle. Centered and large enough to see with generous safe crop margins, lovely sunlit soft shadows and authentic lens reflections. Warm friendly editorial optical product photograph with tactile materials; no toys or added objects. No people, no text, no logo, no numbers, no watermark. Generic illustrative eyewear design, not real inventory. One photograph only, no collage."
+    },
+    {
+      "slug": "fashion",
+      "file": "public/images/editorial/frame-fashion.png",
+      "url": "/images/editorial/frame-fashion.png",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a18cee-52f7-7b91-8c6c-cebd136051db\\exec-7124b04b-5626-4649-b6a0-2d0063a78435.png",
+      "prompt": "Use case: product-mockup. Asset type: premium eyewear website editorial category photograph. Generate a photorealistic 3:2 landscape image, 1536x1024 composition, of one single unbranded oversized cat-eye optical eyeglass frame in translucent warm amber and caramel acetate, with clear untinted lenses. Rest it naturally on smooth rose-beige stone with a softly blurred dusty blush background. Centered whole frame, generous safe crop margins, slightly elevated three-quarter front perspective, refined lifted corners, attractive feminine curves, structurally correct nose bridge, hinges and two temples. Soft warm studio daylight catches the translucent amber edges and creates delicate shadows, crisp luxurious acetate texture and realistic restrained reflections. Rich editorial optical product photography with inviting color, not illustration or render. No people, no text, no logos, no numbers, no watermark, no product labels. Generic illustrative frame, not any real branded product or inventory. Just ONE finished photograph, no collage."
+    },
+    {
+      "slug": "business",
+      "file": "public/images/editorial/frame-business.png",
+      "url": "/images/editorial/frame-business.png",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a18cee-52f7-7b91-8c6c-cebd136051db\\exec-262bed9b-567a-4995-8b95-8ac05e6c96ac.png",
+      "prompt": "Use case: product-mockup. Asset type: premium optical website business frame editorial category photograph. Generate a photorealistic 3:2 landscape image, 1536x1024 composition, of one single unbranded charcoal dark-metal thin half-rim rectangular optical eyeglass frame with clear untinted lenses, resting naturally on subtly textured cool slate gray stone. Half-rim means a slim solid upper rim and nearly invisible lower lens retention, constructed plausibly with realistic bridge, nose pads, hinges and two temples. Whole frame centered with generous safe crop margins in an elevated three-quarter front view. Quiet modern executive style, cool blue-gray palette, beautifully controlled soft lateral daylight and restrained authentic lens reflections, fine brushed metal detail, exceptionally sharp product and softly receding background. Premium polished editorial product photography. No people, no logos, no text, no numbers, no watermark, no fake inventory label. Generic illustrative eyewear not a real branded inventory item. Just ONE finished photograph, no collage."
+    },
+    {
+      "slug": "sun",
+      "file": "public/images/editorial/frame-sun.png",
+      "url": "/images/editorial/frame-sun.png",
+      "source": "C:\\Users\\User\\.codex\\generated_images\\01a18cee-52f7-7b91-8c6c-cebd136051db\\exec-4d25c950-5315-480f-9a1d-57aea0941eba.png",
+      "prompt": "Use case: product-mockup. Asset type: premium eyewear website sunglasses editorial category photograph. Generate a photorealistic 3:2 landscape image, 1536x1024 composition, of one single unbranded refined dark charcoal sunglasses frame with a classic softly squared silhouette and dark green-gray tinted lenses, resting on warm natural sunlit stone. Beautiful soft leafy shadows fall across the pale limestone background and part of the foreground, like a calm sunny terrace. Frame is the main subject, whole object centered with generous safe crop margins, elevated three-quarter front view showing physically plausible bridge, hinges and both temples. Deep dark frame against warmly illuminated beige stone with a subtle sage-green background accent, tactile stone and polished acetate, crisp premium summer editorial product photography, realistic restrained reflections, warm and elegant. No people, no text, no logos, no numbers, no watermark, no case, no price or brand marks. Generic illustrative design and not a real branded product or inventory. ONE single photograph only, no collage."
+    }
+  ]
+}

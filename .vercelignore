@@ -1,8 +1,13 @@
 .git
 .vercel
 .env*
-.build
-dist
+!.env.example
+.next
 node_modules
-test
+docs
+design-reference
+tests
+test-results
+playwright-report
 *.log
+*.tsbuildinfo
